@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .banner {
+            text-align: center;
+            padding: 10px;
+            background-color: #000033;
+            width: 100%;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            background-color: #000033;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        .status-icon {
+            font-size: 60px;
+            color: #ff4d4d;
+            margin: 20px 0;
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .contact {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #0a0a2a;
+            border-radius: 5px;
+        }
+        .home-btn {
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .home-btn:hover {
+            background-color: #0052cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://i.postimg.cc/6QhgC3kb/image-search-1752245026702.png" alt="Store Banner">
+    </div>
+
+    <div class="container">
+        <div class="status-icon">✗</div>
+        <h2>PAYMENT NOT SUCCESSFUL</h2>
+        <div class="message">
+            <p>Your payment verification failed. Please try again.</p>
+            <p>If amount was deducted, it will be refunded within 24 hours.</p>
+        </div>
+        
+        <div class="contact">
+            <p>For any issues, contact support:</p>
+            <p>Email: support@premiumstore.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+        
+        <button class="home-btn" onclick="window.location.href='index.html'">RETURN TO HOME</button>
+    </div>
+</body>
+</html>

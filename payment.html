@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .banner {
+            text-align: center;
+            padding: 10px;
+            background-color: #000033;
+            width: 100%;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            background-color: #000033;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #4da6ff;
+            margin-bottom: 20px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .qr-code img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #0066ff;
+            border-radius: 5px;
+        }
+        .instructions {
+            background-color: #0a0a2a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4da6ff;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #0066ff;
+            background-color: #0a0a2a;
+            color: white;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #0052cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://i.postimg.cc/6QhgC3kb/image-search-1752245026702.png" alt="Store Banner">
+    </div>
+
+    <div class="container">
+        <h2>MAKE PAYMENT</h2>
+        
+        <div class="qr-code">
+            <img src="https://i.postimg.cc/d1wnvcVb/IMG-20250712-155834.jpg" alt="Payment QR Code">
+        </div>
+        
+        <div class="instructions">
+            <h3>Payment Instructions:</h3>
+            <ol>
+                <li>Scan the QR code above to make payment</li>
+                <li>After successful payment, note down the UTR number</li>
+                <li>Enter the UTR number below and click Confirm Payment</li>
+                <li>You will receive your items within 24 hours</li>
+            </ol>
+        </div>
+        
+        <form action="confirm.html" method="get">
+            <div class="form-group">
+                <label for="utr">UTR Number:</label>
+                <input type="text" id="utr" name="utr" placeholder="Enter your UTR number" required>
+            </div>
+            <button type="submit" class="submit-btn">CONFIRM PAYMENT</button>
+        </form>
+    </div>
+</body>
+</html>
